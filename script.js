@@ -1,23 +1,23 @@
 // Complete the js code
 class Car {
 	constructor(make, model) {
-		this.make = make,
-		this.model = model,
+		this.make = make;
+		this.model = model;
 	}
 
 	getMakeModel(){
-		return `${make} ${model}`;	
+		return `${this.make} ${this.model}`;	
 	}
 }
 
 class SportsCar extends Car {
 	constructor(make, model, topSpeed) {
 		super(make,model);
-		this.topSpeed = topSpeed,
+		this.topSpeed = topSpeed;
 	}
 
 	getTopSpeed(){
-		return topSpeed;
+		return this.topSpeed;
 	}
 }
 
